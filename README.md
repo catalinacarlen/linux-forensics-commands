@@ -10,8 +10,8 @@ A practical command reference for **digital forensics and incident response (DFI
 
 ## 0. Golden rules
 
-- **Order of volatility:** collect the most volatile data first — RAM, network connections, running processes — *then* disk. Once you power off, volatile data is gone.
-- **Don't contaminate:** work on **copies/images**, note timestamps, and record every command you run (`script` logs a whole session).
+- **Order of volatility:** collect the most volatile data first — RAM, network connections, running processes — *then* disk.
+- **Don't contaminate:** work on **copies/images**, note timestamps, and record every command (`script` logs a whole session).
 - **Document the chain of custody:** who, what, when, where, hashes of every artifact.
 
 ```bash
@@ -82,7 +82,7 @@ sha256sum artifact.img > artifact.img.sha256      # hash every artifact you coll
 
 ---
 
-## 5. Persistence — where attackers hide
+## 5. Persistence 
 
 | Location / command | What to check |
 |--------------------|---------------|
@@ -113,7 +113,7 @@ sha256sum artifact.img > artifact.img.sha256      # hash every artifact you coll
 
 ---
 
-## 7. Logs (the analyst's gold mine)
+## 7. Logs
 
 | Source | Command / path |
 |--------|----------------|
