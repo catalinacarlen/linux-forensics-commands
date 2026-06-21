@@ -1,0 +1,16 @@
+# Evidence and triage output - never commit captured data
+# Evidencia y salida de triage - nunca subir datos capturados
+triage_*/
+*.img
+*.img.sha256
+*.log
+*.raw
+*.mem
+*.lime
+MANIFEST.sha256
+evidence/
+/mnt/evidence/
+
+# OS / editor cruft
+.DS_Store
+*.swp
